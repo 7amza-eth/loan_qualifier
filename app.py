@@ -28,6 +28,7 @@ def load_bank_data():
     return load_csv(csvpath)
 
 def get_applicant_info():
+    # Function aimed at collecting user input/information
     credit_score = questionary.text("Whats your credit score?").ask()
     debt = questionary.text("Whats your debt?").ask()
     income = questionary.text("Whats your income?").ask()
@@ -116,5 +117,4 @@ if __name__ == "__main__":
     fire.Fire(run)
 
 # Command Line Instruction
-# python app.py --credit_score=750 --debt=5000 --income=20000
-# python app.py --credit_score=805 --debt=3000 --income=8000
+# python app.py
